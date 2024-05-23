@@ -1,1 +1,0 @@
-check deze file dan G.
