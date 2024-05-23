@@ -1,0 +1,81 @@
+ █████╗ ██╗     ██╗      ██████╗ ██╗    ██╗███████╗██████╗     ███████╗██╗  ██╗████████╗███████╗██████╗ ███╗   ██╗ █████╗ ██╗     
+██╔══██╗██║     ██║     ██╔═══██╗██║    ██║██╔════╝██╔══██╗    ██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝██╔══██╗████╗  ██║██╔══██╗██║     
+███████║██║     ██║     ██║   ██║██║ █╗ ██║█████╗  ██║  ██║    █████╗   ╚███╔╝    ██║   █████╗  ██████╔╝██╔██╗ ██║███████║██║     
+██╔══██║██║     ██║     ██║   ██║██║███╗██║██╔══╝  ██║  ██║    ██╔══╝   ██╔██╗    ██║   ██╔══╝  ██╔══██╗██║╚██╗██║██╔══██║██║     
+██║  ██║███████╗███████╗╚██████╔╝╚███╔███╔╝███████╗██████╔╝    ███████╗██╔╝ ██╗   ██║   ███████╗██║  ██║██║ ╚████║██║  ██║███████╗
+╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝  ╚══╝╚══╝ ╚══════╝╚═════╝     ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+                                                                                                                                  
+███████╗██╗   ██╗███╗   ██╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗███████╗                                                        
+██╔════╝██║   ██║████╗  ██║██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝                                                        
+█████╗  ██║   ██║██╔██╗ ██║██║        ██║   ██║██║   ██║██╔██╗ ██║███████╗                                                        
+██╔══╝  ██║   ██║██║╚██╗██║██║        ██║   ██║██║   ██║██║╚██╗██║╚════██║                                                        
+██║     ╚██████╔╝██║ ╚████║╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║███████║                                                        
+╚═╝      ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝                                                        
+                                                                                                                                  
+
+readline            https://linux.die.net/man/3/readline
+rl_clear_history    https://tiswww.case.edu/php/chet/readline/readline.html
+rl_on_new_line
+rl_replace_line
+rl_redisplay
+add_history         https://linux.die.net/man/3/history
+printf              https://linux.die.net/man/3/printf
+malloc              https://linux.die.net/man/3/malloc
+free                https://linux.die.net/man/3/free
+write               https://linux.die.net/man/3/write
+access              https://linux.die.net/man/2/access
+open                https://linux.die.net/man/3/open
+readclose           https://linux.die.net/man/3/readclose
+fork                https://linux.die.net/man/2/fork
+wait                https://linux.die.net/man/3/wait
+waitpid             https://linux.die.net/man/3/waitpid
+wait3               https://linux.die.net/man/2/wait3
+wait4               https://linux.die.net/man/2/wait4
+signal              https://linux.die.net/man/2/signal
+sigaction           https://linux.die.net/man/3/sigaction
+sigemptyset         https://linux.die.net/man/3/sigemptyset
+sigaddset           https://linux.die.net/man/3/sigaddset
+kill                https://linux.die.net/man/3/kill
+exit                https://linux.die.net/man/3/exit
+getcwd              https://linux.die.net/man/3/getcwd
+chdir               https://linux.die.net/man/3/chdir
+stat                https://linux.die.net/man/3/stat
+lstat               https://linux.die.net/man/3/lstat
+fstat               https://linux.die.net/man/3/fstat
+unlink              https://linux.die.net/man/3/unlink
+execve              https://linux.die.net/man/3/execve
+dup                 https://linux.die.net/man/3/dup
+dup2                https://linux.die.net/man/3/dup2
+pipe                https://linux.die.net/man/3/pipe
+opendir             https://linux.die.net/man/3/opendir
+readdir             https://linux.die.net/man/3/readdir
+closedir            https://linux.die.net/man/3/closedir
+strerror            https://linux.die.net/man/3/strerror
+perror              https://linux.die.net/man/3/perror
+isatty              https://linux.die.net/man/3/isatty
+ttyname             https://linux.die.net/man/3/ttyname
+ttyslot             https://linux.die.net/man/3/ttyslot
+ioctl               https://linux.die.net/man/3/ioctl
+getenv              https://linux.die.net/man/3/getenv
+tcsetattr           https://linux.die.net/man/3/tcsetattr
+tcgetattr           https://linux.die.net/man/3/tcgetattr
+tgetent             https://linux.die.net/man/3/tgetent
+tgetflag            https://linux.die.net/man/3/tgetflag
+tgetnum             https://linux.die.net/man/3/tgetnum
+tgetstr             https://linux.die.net/man/3/tgetstr
+tgoto               https://linux.die.net/man/3/tgoto
+tputs               https://linux.die.net/man/3/tputs
+
+
+██╗   ██╗███████╗███████╗███████╗██╗   ██╗██╗         ██╗     ██╗███╗   ██╗██╗  ██╗███████╗
+██║   ██║██╔════╝██╔════╝██╔════╝██║   ██║██║         ██║     ██║████╗  ██║██║ ██╔╝██╔════╝
+██║   ██║███████╗█████╗  █████╗  ██║   ██║██║         ██║     ██║██╔██╗ ██║█████╔╝ ███████╗
+██║   ██║╚════██║██╔══╝  ██╔══╝  ██║   ██║██║         ██║     ██║██║╚██╗██║██╔═██╗ ╚════██║
+╚██████╔╝███████║███████╗██║     ╚██████╔╝███████╗    ███████╗██║██║ ╚████║██║  ██╗███████║
+ ╚═════╝ ╚══════╝╚══════╝╚═╝      ╚═════╝ ╚══════╝    ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+
+ 
+                                                                                           
+https://m4nnb3ll.medium.com/minishell-building-a-mini-bash-a-42-project-b55a10598218
+https://harm-smits.github.io/42docs/projects/minishell
+https://www.youtube.com/playlist?list=PLGU1kcPKHMKj5yA0RPb5AK4QAhexmQwrW
