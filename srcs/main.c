@@ -6,6 +6,9 @@ int main(void)
 	int i = 0;
 	HIST_ENTRY **the_history_list;
 
+	// add signal mask
+	// initialize_signals();
+
 	// test getenv.
 	printf("PATH : %s\n", getenv("PATH"));
 	printf("HOME : %s\n", getenv("HOME"));
@@ -13,7 +16,7 @@ int main(void)
 	
 	// test readline.
 	using_history();
-	while(i < 3)
+	while(1)
 	{
 		printf("%d - ", i);
 		user_input = readline("Enter text: ");
