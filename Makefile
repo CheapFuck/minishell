@@ -18,8 +18,8 @@ run		:	all
 			./$(NAME)
 
 
-# leak	:	all
-# 			valgrind --leak-check=full ./push_swap $(ARG)
+leak	:	all
+			valgrind --leak-check=full ./shell
 
 clean	:
 	    	$(RM) $(OBJS)
