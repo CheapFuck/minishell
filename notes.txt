@@ -18,7 +18,7 @@ rl_clear_history    https://tiswww.case.edu/php/chet/readline/readline.html
 rl_on_new_line
 rl_replace_line
 rl_redisplay
-add_history         https://linux.die.net/man/3/history
+add_history         https://linux.die.net/man/3/history (https://tiswww.case.edu/php/chet/readline/history.html)
 printf              https://linux.die.net/man/3/printf
 malloc              https://linux.die.net/man/3/malloc
 free                https://linux.die.net/man/3/free
