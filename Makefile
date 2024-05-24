@@ -11,7 +11,7 @@ all		: 	$(NAME)
 			$(CC) -I ./includes/ -c $(FLAGS) -o $@ $<
 
 $(NAME)	:	$(OBJS)
-			$(CC) ${OBJS} $(FLAGS) -o $(NAME) -lreadline
+			$(CC) ${OBJS} $(FLAGS) -o $(NAME) -lreadline -D_POSIX_C_SOURCE
 			@echo $(NAME) has been made!
 
 run		:	all
