@@ -25,12 +25,9 @@ int main(void)
 		printf("\n\n");
 		i++;
 	}
-	// display history?
-	// HIST_ENTRY **history_list(void)
 	// history_get_history_state();
 	printf("pointer to hist list: %p\n", &the_history_list);
 	// printf("history entry: %s\n", the_history_list->hist_entry);
-	// printf("%s\n", the_history_list[0][0]);
 	return (0);
 }
 
