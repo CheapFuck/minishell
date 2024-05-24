@@ -1,0 +1,4 @@
+*.out
+shell
+*.gch
+*.o
