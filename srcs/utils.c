@@ -3,36 +3,93 @@
 /**
 * split input into words - all illegal funcs
 */
-char **split_line(char *line)
+static int		count_words(char *str)
 {
-	int bufsize = 64;
-	int i = 0;
-	char **tokens;
-	char *token;
+	int	i = 0;
+	int count = 0;
 
-	tokens = malloc(bufsize * sizeof(char *));
-	if (!tokens)
+	if (!str)
+		return (0);
+	while (str[i])
 	{
-		fprintf(stderr, "allocation error in split_line: tokens\n");
-		exit(EXIT_FAILURE);
-	}
-	token = strtok(line, TOK_DELIM);
-	while (token != NULL)
-	{
-		tokens[i] = token;
-		i++;
-		if (i >= bufsize)
+		if (str[i] == '\t' || str[i] == ' ' || str[i] == '\n')
 		{
-			bufsize += bufsize;
-			tokens = realloc(tokens, bufsize * sizeof(char *));
-			if (!tokens)
+			if (i == 0 || str[i - 1] == '\t' || str[i - 1] == ' ' || str[i - 1] == '\n')
 			{
-				fprintf(stderr, "reallocation error in split_line: tokens");
-				exit(EXIT_FAILURE);
+				i++;
+				continue;
 			}
+			count++;
 		}
-		token = strtok(NULL, TOK_DELIM);
+		else if (str[i + 1] == '\0')
+		{
+			count++;
+		}
+		i++;
 	}
-	tokens[i] = NULL;
-	return (tokens);
+	return (count);
+}
+
+char	**ft_split(char *str)
+{
+	int	wcount = 0;
+	char **ret = NULL;
+	int	i = 0;
+	int	j = 0;
+	int k = 0;
+	int l = 0;
+
+	wcount = count_words(str);
+	if (wcount <= 0)
+		return (NULL);
+	ret = malloc((wcount + 1) * sizeof(char *));
+	if (!ret)
+		return (NULL);
+
+	while (str[i])
+	{
+		if (str[i] == '\t' || str[i] == ' ' || str[i] == '\n')
+		{
+			if (i == 0 || str[i - 1] == '\t' || str[i - 1] == ' ' || str[i - 1] == '\n')
+			{
+				i++;
+				j++;
+				continue;
+			}
+			ret[k] = malloc(((i - j) + 1) * sizeof(char));
+			if (!ret[k])
+				return (NULL);
+			while (j < i)
+			{
+				ret[k][l] = str[j];
+				j++;
+				l++;
+			}
+			ret[k][l] = '\0';
+			j++;
+			k++;
+			l = 0;
+		}
+		else if (str[i + 1] == '\0')
+		{
+			i++;
+			ret[k] = malloc(((i - j) + 1) * sizeof(char));
+			if (!ret[k])
+				return (NULL);
+			while (j < i)
+			{
+				ret[k][l] = str[j];
+				j++;
+				l++;
+			}
+			ret[k][l] = '\0';
+			j++;
+			k++;
+			l = 0;
+			break ;
+		}
+		i++;
+	}
+	ret[k] = NULL;
+	return (ret);
 }

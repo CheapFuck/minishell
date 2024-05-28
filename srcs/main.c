@@ -14,7 +14,7 @@ int main(void)
 	{
 		printf("%d-", i);
 		user_input = readline(": ");
-		args = split_line(user_input);
+		args = ft_split(user_input);
 		while (args[j])
 		{
 			printf("args[%d]: %s\n", j, args[j]);
