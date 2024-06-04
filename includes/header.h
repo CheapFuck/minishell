@@ -7,9 +7,23 @@
 # include <stdlib.h>
 # include <readline/readline.h>
 # include <readline/history.h>
+# include <signal.h>
 
 #include <sys/types.h>
 #include <sys/wait.h>
+
+// typedef struct vars
+// {
+
+// }	t_vars;
+
+// struct sigaction {
+//                void     (*sa_handler)(int);
+//                void     (*sa_sigaction)(int, siginfo_t *, void *);
+//                sigset_t   sa_mask;
+//                int        sa_flags;
+//                void     (*sa_restorer)(void);
+//            };
 
 typedef struct s_list
 {

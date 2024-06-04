@@ -2,7 +2,7 @@
 
 static void	shorten_that_list(t_list **head, int start, int end)
 {
-	int		len;
+	// int		len;
 	int		i;
 	t_list	*new_head;
 	t_list	*tmp;
@@ -10,7 +10,7 @@ static void	shorten_that_list(t_list **head, int start, int end)
 	char	*new_content;
 	int		x = -1;
 
-	len = ft_lstsize(*head); //Unused?
+	// len = ft_lstsize(*head); //Unused?
 	i = 0;
 	cpy = *head;
 	while (cpy)

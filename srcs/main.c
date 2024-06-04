@@ -1,15 +1,38 @@
-#include "header.h"
-// #include <signal.h>
+#include "../includes/header.h"
+#include <signal.h>
 
-// void handler(int num)
-// {
-// 	(void) num;
+void handler(int num)
+{
+	(void) num;
 
-// 	printf("don't stop\n"); // use write
-// 	//segfaults because... ?
-// 	return ;
-// }
+	printf("don't stop\n"); // use write
+	//segfaults because... ?
+	return ;
+}
 
+void handle_signal(int signal, siginfo_t *info, void *context) {
+    // Handle the signal here
+    (void)signal; // Suppress unused parameter warning
+    (void)info; (void)context; // Suppress unused variable warnings
+}
+
+static void initialize_signals(void)
+{
+    struct sigaction sa;
+    sigemptyset(&sa.sa_mask);
+    sigaddset(&sa.sa_mask, SIGINT);
+    sigaddset(&sa.sa_mask, SIGKILL);
+    sa.sa_flags = SA_SIGINFO;
+    sa.sa_sigaction = handle_signal;
+
+    if (sigaction(SIGINT, &sa, NULL) == -1) {
+printf("sigint\n"); }
+
+    if (sigaction(SIGKILL, &sa, NULL) == -1) {
+		printf("sigkill\n");
+        // Handle error
+    }
+}
 
 // static void	initialize_signals(void)
 // {
@@ -54,7 +77,7 @@ int	main(void)
 	//signal time
 	// signal(SIGINT, handler);
 	// printf("pid: %d\n", getpid());
-
+initialize_signals();
 	using_history();
 	while(status == -1)
 	{
