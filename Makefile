@@ -1,6 +1,10 @@
 NAME			:=	shell
 SRCS			:=	srcs/main.c \
-					srcs/utils.c
+					srcs/new_split.c \
+					srcs/libft_utils.c \
+					srcs/list_utils.c \
+					srcs/changedir.c \
+					srcs/new_test.c
 
 FLAGS			:=	-Wall -Wextra -Werror
 OBJS			:=	$(SRCS:.c=.o)
@@ -11,7 +15,7 @@ all		: 	$(NAME)
 			$(CC) -I ./includes/ -c $(FLAGS) -o $@ $<
 
 $(NAME)	:	$(OBJS)
-			$(CC) ${OBJS} $(FLAGS) -o $(NAME) -lreadline -D_POSIX_C_SOURCE
+			$(CC) ${OBJS} $(FLAGS) -o $(NAME) -lreadline
 			@echo $(NAME) has been made!
 
 run		:	all

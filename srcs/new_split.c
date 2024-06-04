@@ -1,7 +1,7 @@
 #include "header.h"
 
 /**
-* split input into words - all illegal funcs
+* split input into words
 */
 static int		count_words(char *str)
 {
